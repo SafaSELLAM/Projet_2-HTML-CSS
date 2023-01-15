@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" >
-    <title>Bookie Agence de Voyages</title>
+    <title>Bookie Agence de Voyages </title>
     <link rel="stylesheet" href="CSS/style.css">
     <script src="https://kit.fontawesome.com/8c24e7947e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,29 +12,104 @@
 </head>
 <body>
     <header>
-        <nav>
-            <img src="images/Images Booki/logo/Booki.png" alt="logo Booki">
-            <div>
-                <a href="">Hébergements</a>
-                <a href="">Activités</a>  
+        <nav class="between">
+            <img src="images/logo/Booki.png" alt="logo Booki" width="61" height="19">
+            <div class="around liens_nav ">
+                <div class="bordureNav sizeLien center">
+                <a href="#hebergement"  class="colorBlue noDecoration">Hébergements</a>
+            </div>
+            <div class="bordureNav sizeLien center">
+                <a href="#activites" class="colorBlack noDecoration">Activités</a>
+            </div>  
             </div>  
         </nav>
-        <section>
+        <section class="sectionNav">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
-            <div class="formulaire_destination">
-                <div class="font_destination">
+            <div class="searchBar center">
+                <div class="font_destination center backGris">
                     <i class="fa-solid fa-location-dot"></i>
                 </div>
-                <form action="#" method="get">
-                    <input type="text" placeholder="Hébergements à Marseilles" name="destination">
-                    <input type="submit" class="bouton" value="Rechercher">
+                <form action="#" method="get" class="center">
+                <div>
+                        <input type="search" class="search noBorder" placeholder="Marseille, France" name="destination">
+                </div>
+                <div >
+                        <input type="submit" class="bouton center backBlue noBorder" value="Rechercher">
+                </div>
                 </form>
             </div>
-            <div class="filtres">
-                
+            <div class="barre_filtres">
+                <div><h3>Filtres</h3></div>
+            <div class="bordureFiltres between "  >
+                <i class="fa-solid fa-money-bill-wave fa-lg  IconeFiltres"></i>
+                <div><a href="#" class="noDecoration textFiltres">Economique</a></div>
             </div>
+            <div class="bordureFiltres between">
+                <i class="fa-solid fa-child fa-xl  IconeFiltres"></i>
+                <div><a href="#" class="noDecoration textFiltres">Familial</a></div>
+            </div>
+            <div class="bordureFiltres between">
+                <i class="fa-solid fa-heart fa-lg IconeFiltres"></i>
+                <div><a href="#" class="noDecoration textFiltres">Romantique</a></div>
+            </div>
+            <div class="bordureFiltres between ">
+                <i class="fa-solid fa-dog fa-lg  IconeFiltres"></i>
+                <div><a href="#" class="noDecoration textFiltres">Animaux autorisés</a></div>
+            </div>
+        </div>
+            <div class="information">
+                <i class="fa-solid fa-info iconeInfo "></i>
+            <div class="text_info">Plus de 500 logements sont disponibles dans cette ville.</div>
+            </div>
+            
         </section>
     </header>
+    <main>
+        <section id="hebergement" class="hebergement_marseille backGris">
+            <h2>Hébergements à Marseille</h2>
+            <div class="blocs_1">
+                <figure>
+                    <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la Canebière" width="205" height="124">
+                         <figcaption>Auberge La Canebière</figcaption>
+                            <div class="textTarif">Nuit à partir de 25€</div>
+                </figure>
+                <figure>
+                    <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" width="205" height="124">
+                            <figcaption> Hôtel du Port</figcaption>
+                            <div class="textTarif">Nuit à partir de 52€</div>
+                </figure>
+                <figure>
+                    <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hôtel les mouettes" width="205" height="124">
+                        <figcaption>Hôtel les mmouettes</figcaption>
+                            <div class="textTarif">Nuit à partir de 76€</div>
+                </figure>
+
+            </div>
+            <div class="blocs_2">
+                <figure>
+                    <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" width="205" height="124">
+                         <figcaption>Hôtel de la mer</figcaption>
+                            <div class="textTarif">Nuit à partir de 45€</div>
+                </figure>
+                <figure>
+                    <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" width="205" height="124">
+                            <figcaption> Auberge Le Panier</figcaption>
+                            <div class="textTarif">Nuit à partir de 23€</div>
+                </figure>
+                <figure>
+                    <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel Chez Amina" width="205" height="124">
+                        <figcaption>Hôtel Chez Amina</figcaption>
+                            <div class="textTarif">Nuit à partir de 96€</div>
+                </figure>
+            </div>
+            <div>Afficher plus</div>
+        </section>
+
+        <section id="activites" class="activites">
+            <h2>Activités à Marseille</h2>
+
+        </section>
+    </main>
 </body>
 </html>
