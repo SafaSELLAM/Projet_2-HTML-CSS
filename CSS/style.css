@@ -14,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.colorgris {
+.colorGris {
     color: #f2f2f2;
 }
 .backGris {
@@ -126,6 +126,11 @@ p {
     padding-left: 15px;
     padding-right: 15px;
  }
+ #filtreMobile{
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+ }
  .IconeFiltres {
     color: #0065fc;
     padding-right: 15px;
@@ -169,10 +174,11 @@ p {
 
 .hebergement_marseille {
     margin-left: 45px;
-    width: 880px;
-    height: 626px;
+    width: 960px;
+    height: 650px;
     display: flex;
     flex-direction: column;
+    border-radius: 20px;
 }
 .hebergement_marseille h2 {
     padding-left: 42px;
@@ -181,12 +187,13 @@ p {
 .blocs_1 {
     display: flex;
     flex-direction: row;
+
 }
 .blocs_2 {
     display: flex;
     flex-direction: row;
 }
-img{
+.image_photo{
     border-radius: 20px 20px 0px 0px ;
     padding-top: 5px;
     padding-left: 4.5px;
@@ -197,7 +204,7 @@ figure {
     background-color: white;
     box-shadow: 3px 4px 4px #D9D9D9; 
     width: 246px;
-    height: 200px;
+    height: 210px;
 }
 figcaption {
     font-size: 16px;
@@ -207,4 +214,16 @@ figcaption {
 .textTarif {
     font-size: 14px;
     padding-left: 4px;
+}
+.ratingStars{
+    display: flex;
+    flex-direction: row;
+    margin-top: 13px;
+    margin-left: 6px;
+}
+.afficher_plus{
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 42px;
+    padding-top: 20px;
 }
