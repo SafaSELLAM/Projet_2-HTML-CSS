@@ -41,7 +41,7 @@
             </div>
             <div class="barre_filtres">
                 <div><h3>Filtres</h3></div>
-                    <div id="filtreMobile">
+                    
             <div class="bordureFiltres between "  >
                 <i class="fa-solid fa-money-bill-wave fa-lg  IconeFiltres"></i>
                 <div><a href="#" class="noDecoration textFiltres">Economique</a></div>
@@ -58,9 +58,9 @@
                 <i class="fa-solid fa-dog fa-lg  IconeFiltres"></i>
                 <div><a href="#" class="noDecoration textFiltres">Animaux autorisés</a></div>
             </div>
-                </div>
+                
             </div>
-            <div class="information">
+            <div id="information">
                 <i class="fa-solid fa-info iconeInfo "></i>
             <div class="text_info">Plus de 500 logements sont disponibles dans cette ville.</div>
             </div>
@@ -68,11 +68,12 @@
         </section>
     </header>
     <main>
+        <div id="firstSection">
         <section id="hebergement" class="hebergement_marseille backGris">
             <h2>Hébergements à Marseille</h2>
             <div class="blocs_1">
                 <figure>
-                    <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la Canebière" width="240" height="124" class="image_photo">
+                    <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la Canebière" width="260" height="124" class="hebergement_photo">
                          <figcaption>Auberge La Canebière</figcaption>
                             <div class="textTarif">Nuit à partir de 25€</div>
                             <div class="ratingStars">
@@ -84,7 +85,7 @@
                             </div>
                 </figure>
                 <figure>
-                    <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" width="240" height="124" class="image_photo">
+                    <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" width="260" height="124" class="hebergement_photo">
                             <figcaption> Hôtel du Port</figcaption>
                             <div class="textTarif">Nuit à partir de 52€</div>
                             <div class="ratingStars">
@@ -96,8 +97,8 @@
                             </div>
                 </figure>
                 <figure>
-                    <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hôtel les mouettes" width="240" height="124" class="image_photo">
-                        <figcaption>Hôtel les mmouettes</figcaption>
+                    <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hôtel les mouettes" width="260" height="124" class="hebergement_photo">
+                        <figcaption>Hôtel les mouettes</figcaption>
                             <div class="textTarif">Nuit à partir de 76€</div>
                             <div class="ratingStars">
                                 <i class="fa-solid fa-star fa-xs colorBlue"></i>
@@ -111,7 +112,7 @@
             </div>
             <div class="blocs_2">
                 <figure>
-                    <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" width="240" height="124" class="image_photo">
+                    <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" width="260" height="124" class="hebergement_photo">
                          <figcaption>Hôtel de la mer</figcaption>
                             <div class="textTarif">Nuit à partir de 45€</div>
                             <div class="ratingStars">
@@ -123,7 +124,7 @@
                             </div>
                 </figure>
                 <figure>
-                    <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" width="240" height="124" class="image_photo">
+                    <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" width="260" height="124" class="hebergement_photo">
                             <figcaption> Auberge Le Panier</figcaption>
                             <div class="textTarif">Nuit à partir de 23€</div>
                             <div class="ratingStars">
@@ -135,7 +136,7 @@
                             </div>
                 </figure>
                 <figure>
-                    <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel Chez Amina" width="240" height="124">
+                    <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel Chez Amina" width="260" height="124" class="hebergement_photo">
                         <figcaption>Hôtel Chez Amina</figcaption>
                             <div class="textTarif">Nuit à partir de 96€</div>
                             <div class="ratingStars">
@@ -147,13 +148,63 @@
                             </div>
                 </figure>
             </div>
-            <div class="afficher_plus">Afficher plus</div>
+            <div class="afficher_plus"> <a href="#" class="noDecoration colorBlack"> Afficher plus </a></div>
         </section>
+        <section id="populaire" class="backGris">
+        <div><h2>Les Plus Populaires</h2></div>
+            <div class="card_pop">
+                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" width="137" height="144" class="populaire_photo">
+                    <div class="text_card_pop">   
+                        <div class="caption_pop">Hôtel Le soleil du matin</div>
+                            <div class="textTarif_pop">Nuit à partir de 128€</div>
+                            <div class="ratingStars_pop">
+                                <i class="fa-solid fa-star fa-xs colorBlue"></i>
+                                <i class="fa-solid fa-star fa-xs colorBlue"></i>
+                                <i class="fa-solid fa-star fa-xs colorBlue"></i>
+                                <i class="fa-solid fa-star fa-xs colorBlue"></i>
+                                <i class="fa-solid fa-star fa-xs  colorGris"></i>
+                            </div>
+                    </div>        
+            </div>
+            <div class="card_pop">
+                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambres d'hôtes Au coeur de l'eau" width="137" height="144" class="populaire_photo">
+                    <div class="text_card_pop"> 
+                        <div class="caption_pop">Chambres d'hôtes Au coeur de l'eau</div>
+                            <div class="textTarif_pop">Nuit à partir de 71€</div>
+                            <div class="ratingStars_pop">
+                                <i class="fa-solid fa-star fa-xs colorBlue"></i>
+                                <i class="fa-solid fa-star fa-xs colorBlue"></i>
+                                <i class="fa-solid fa-star fa-xs colorBlue"></i>
+                                <i class="fa-solid fa-star fa-xs colorBlue"></i>
+                                <i class="fa-solid fa-star fa-xs  colorGris"></i>
+                            </div>
+                    </div>
+            </div>
+            <div class="card_pop">
+                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Bleu et Blanc" width="137" height="144" class="populaire_photo">
+                    <div class="text_card_pop"> 
+                        <div class="caption_pop">Hôtel Bleu et Blanc</div>
+                            <div class="textTarif_pop">Nuit à partir de 68€</div>
+                                <div class="ratingStars_pop">
+                                <i class="fa-solid fa-star fa-xs colorBlue"></i>
+                                <i class="fa-solid fa-star fa-xs colorBlue"></i>
+                                <i class="fa-solid fa-star fa-xs colorBlue"></i>
+                                <i class="fa-solid fa-star fa-xs colorBlue"></i>
+                                <i class="fa-solid fa-star fa-xs  colorGris"></i>
+                            </div>
+                    </div>
+            </div>
 
-        <section id="activites" class="activites">
+
+    </section>
+</div>
+  
+
+        <section id="activites">
             <h2>Activités à Marseille</h2>
 
         </section>
+   
     </main>
 </body>
 </html>
