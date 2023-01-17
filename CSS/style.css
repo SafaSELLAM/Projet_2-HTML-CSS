@@ -288,3 +288,23 @@ figcaption {
     margin-left: 45px;
     margin-top: 45px;
 }
+#grilleActivites{
+    display: flex;
+    flex-direction: row;
+    width: 1530px;
+    height: 493px;
+    margin-left: 45px;
+}
+#grilleActivites figure{
+    height: 462px;
+    width: 345px;
+    border-radius: 20px;
+}
+.activite_photo{
+    border-radius: 20px 20px 0px 0px;
+}
+#grilleActivites figcaption{
+    font-size: 16px;
+    padding-left: 22px;
+    padding-top: 15px;
+}
