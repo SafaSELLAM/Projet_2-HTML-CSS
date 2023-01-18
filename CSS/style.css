@@ -54,11 +54,9 @@ body{
     text-decoration: none;
 }
 
-nav{
-    width: 100%;
-    margin-right: 77px;
-    margin-left: 40px;
-
+nav img{
+    margin-left: 50px;
+  
 }
 .sizeLien {
     height: 100px;
@@ -83,7 +81,9 @@ p {
     margin-top: 10px;
 }
 .sectionNav {
-    margin-left: 40px;
+    width: 91%;
+    margin-right: auto;
+    margin-left: auto;
 }
 .searchBar {
     width: 400px;
@@ -175,11 +175,11 @@ p {
 #firstSection{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     
 }
 .hebergement_marseille {
-    margin-left: 45px;
-    width: 70%;
+    width: 65%;
     height: 650px;
     display: flex;
     flex-direction: column;
@@ -259,9 +259,8 @@ p {
 }
 
 .populaire_marseille {
-    margin-left: 70px;
     height: 650px;
-    width: 30%;
+    width: 25%;
     border-radius: 20px;
 }
 
@@ -335,9 +334,8 @@ p {
 /*footer*/
 footer{
     width: 97%;
-   
-    margin-left: 45px;
-  
+    margin-left: auto;
+    margin-right: auto;
 }
 #a_propos{
     display: flex;
