@@ -63,6 +63,9 @@ body{
     font-family: 'raleway', sans-serif;
     max-width: 1400px;
 }
+main{
+    max-width: 1400px;
+}
 *{
     box-sizing: border-box;
 }
@@ -196,7 +199,9 @@ p {
  }
 
 /*HEBERGEMENT MARSEILLE*/
-    
+    .first_section{
+        height: 680px;
+    }
 .hebergement_marseille {
     width: 65%;
     height: 680px;
@@ -234,8 +239,9 @@ p {
 .text_container h3 {
     font-size: 16px;
     font-weight: 700;
-    padding-bottom: 5px;
-    height: 2px;
+    min-height: 26px;
+    display: flex;
+    height: fit-content;
 }
 .text_container p {
     font-size: 14px;
@@ -315,43 +321,74 @@ p {
 /*footer*/
 footer{
     width: 95%;
+    display: flex;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
 #container_footer{
     width: 85%;
-    padding-top: 73px;
+    height: 220px;
 
 }
 .Bloc_footer{
-    height: 250px;
     margin-right: 12px;
+    min-height: 135px;
+}
+.Bloc_footer h3{
+    padding-bottom: 2px;
 }
 .Bloc_footer div{
-    padding-top: 10px;
+    padding-bottom: 8px;
 }
 
 /*Responsive Tablette*/
-@media screen and (max-width: 991px){
 
-    #firstSection{
-        display: flex;
-        flex-direction: column;
+@media screen and (max-width: 991px){
+    .filtres {
+        width: 100%;
+       }
+    .barre_filtres{
+    width: 100%;
+        }
+        .first_section{
+            flex-direction: column;
+            height: fit-content;
+        }
+        
+    .hebergement_marseille{
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 50px;
+    }
+    .populaire_marseille{
+        width: 90%;
+        margin-bottom: 20px;
+        margin-right: auto;
+        margin-left: auto;
         height: fit-content;
     }
-    
-.hebergement_marseille{
-    width: 90%;
-    order: 1;
-}
-.populaire_marseille{
-    width: 90%;
-    order: 2;
-}
-.bloc_3{
-    flex-direction: row;
-}
-
+    .en-tete_pop{
+        justify-content: space-between;
+        padding: 0px 29px 0px 22px;
+    }
+    .bloc_3{
+        flex-direction: row;
+        margin-bottom: 40px;
+    }
+    .bloc_3>*{
+        flex: 1 0 25%;
+    }
+    #grilleActivites{
+        height: 334px;
+    }
+    .card_activites{
+        height: 295px;
+    }
+    .activite_photo{
+        height: 225px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -363,6 +400,7 @@ footer{
     .filtres {
      flex-direction: column;
      height: fit-content;
+     width: 100%;
     }
     .filtres h3 {
      display: flex;
