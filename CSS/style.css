@@ -113,6 +113,8 @@ p {
     margin-left: auto;
 }
 .searchBar {
+    display: flex;
+    align-items: center;
     width: 400px;
     border: #f2f2f2 0.75px solid;
     border-radius: 10px;
@@ -351,10 +353,11 @@ footer{
     .barre_filtres{
     width: 100%;
         }
-        .first_section{
-            flex-direction: column;
-            height: fit-content;
-        }
+ .first_section{
+    width: 100%;
+     flex-direction: column;
+     height: fit-content;
+ }
         
     .hebergement_marseille{
         width: 90%;
@@ -392,6 +395,33 @@ footer{
 }
 
 @media screen and (max-width: 767px) {
+    nav img{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    nav{
+        flex-direction:column;
+    
+    }
+    .liens_nav{
+        
+        justify-content: center;
+        font-weight: 500;
+        font-size: 16px;
+        width: 100%;
+        padding-top: 3px;
+        text-decoration: none;
+    }
+    .bordureNav{
+        border-bottom: 3px solid transparent;
+        
+    }
+    .bordureNav:hover {
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid #0065fc;
+    }
+   
     .MobileIntro{
         width: 100%;
         justify-content: center;
@@ -417,30 +447,63 @@ footer{
         justify-content: flex-start;
         padding-left: 22px;
     }
-   
- 
-    nav{
-        flex-direction:column;
-    
+    .searchBar{
+        width: auto;
+        border: none;
     }
-    .liens_nav{
+    .search{
+        width: 200px;
+        border: 1px solid #f2f2f2;
+    }
+    .bouton{
+        width: 50px;
+    }
+    .mobile_display_none{
+        display: none;
+    }
+    .hebergement_marseille{
+        height: fit-content;
+        order:1
+    }
+    .populaire_marseille{
+        order: 0;
+    }
+    .bloc_1{
+        wwidth: 100%;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .bloc_1>*{
+        flex: 1 0 30%;
+    }
+    .bloc_2{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .bloc_3{
+        flex-direction: column;
+    }
+    #activites{
         
-        justify-content: center;
-        font-weight: 500;
-        font-size: 16px;
-        width: 100%;
-        padding-top: 3px;
-        text-decoration: none;
+        height: fit-content;
     }
-    .bordureNav{
-        border-bottom: 3px solid transparent;
-        
+    #activites h2{
+        max-width: 120px;
+        margin-left: 30px;
     }
-    .bordureNav:hover {
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid #0065fc;
+    #grilleActivites{
+        height: fit-content;
+        flex-direction: column;
     }
-
- 
+    .activite_photo{
+        height: 194px;
+    }
+    .card_activites{
+        width: 90%;
+        height: 230px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+    }
     }
     
