@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" >
-    <meta name="viewport" content="width=devise-width, initiial-scale=1">
+    <meta name="viewport" content="width=device-width, initiial-scale=1">
     <title>Bookie Agence de Voyages </title>
     <link rel="stylesheet" href="CSS/style.css">
     <script src="https://kit.fontawesome.com/8c24e7947e.js" crossorigin="anonymous"></script>
@@ -35,31 +35,29 @@
         </nav>
     </header>
     <main>
-        <section class="sectionNav">
-            <div class="MobileIntro">
+        <section id="Section_1">
+            <div class="MobileIntro"> 
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
             <div class="searchBar ">
-                <div class="font_destination center backGris">
-                    <i class="fa-solid fa-location-dot"></i>
-                </div>
                 <form action="#" method="get" class="center">
-                <div>
+                    <div class="form_content center">
+                        <span class="font_destination center backGris">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
                         <input type="search" class="search noBorder" placeholder="Marseille, France" name="destination">
-                </div>
-                <div >
-                        <button type="submit" class="bouton backBlue noBorder">
-                            <span class="button_text"> Rechercher</span>
-                            <i class="fa-solid fa-magnifying-glass icone_none"></i>
-                        </button> 
-                </div>
-                </form>
-            </div>
+                        <!-- value visible en desktop et tablette mais remplacé par icone en mobile -->
+                                    <button type="submit" class="bouton backBlue noBorder center">
+                                        <span class="button_text"> Rechercher</span>
+                                        <i class="fa-solid fa-magnifying-glass icone_none"></i>
+                                    </button> 
+                            </div>
+                            </form>
+                        </div>
         </div>
             <div class="filtres ">
                 <h3>Filtres</h3>
                  <div class="barre_filtres">  
-                    
                     <div class="bordureFiltres center "  >
                         <i class="fa-solid fa-money-bill-wave fa-lg  IconeFiltres"></i>
                         <div><a href="#" class="noDecoration textFiltres">Economique</a></div>
@@ -84,14 +82,15 @@
             </div>
             
         </section>
-    
-        <section id="firstSection " class="first_section row_evenly">
+    <!-- Section contenant le bloc hébergement et l'article plus populaire -->
+        <section id="Section_2 " class="second_section row_evenly">
             <div class="hebergement_marseille backGris column">
             <h2 id="hebergement" >Hébergements à Marseille</h2>
+            <!-- division d'un premier bloc hebergement -->
             <div class="blocs_1 row_evenly">
                 <div class="card_hebergement">
                     <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge la Canebière" class="hebergement_photo"  >
-                    <div class="container_card_hebergement column_between">   
+                    <div class="container_card_hebergement ">   
                         <div class="text_container"> 
                             <h3>Auberge La Canebière</h3>
                             <p> Nuit à partir de 25€</p>
@@ -107,7 +106,7 @@
                 </div>
                 <div class="card_hebergement">
                     <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port"  class="hebergement_photo">
-                        <div class="container_card_hebergement column_between"> 
+                        <div class="container_card_hebergement "> 
                             <div class="text_container">        
                                 <h3> Hôtel du Port</h3>
                                 <p>Nuit à partir de 52€</p>
@@ -123,7 +122,7 @@
                 </div>
                 <div class="card_hebergement">
                     <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hôtel les mouettes"  class="hebergement_photo">
-                    <div class="container_card_hebergement column_between"> 
+                    <div class="container_card_hebergement "> 
                         <div class="text_container"> 
                             <h3>Hôtel les mouettes</h3>
                             <p>Nuit à partir de 76€</p>
@@ -138,11 +137,11 @@
                     </div>
                 </div>
             </div>
-            
+            <!-- division du deuxième bloc -->
             <div class="blocs_2 row_evenly">
                 <div class="card_hebergement">
                     <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer"  class="hebergement_photo">
-                    <div class="container_card_hebergement column_between">
+                    <div class="container_card_hebergement ">
                         <div class="text_container">       
                             <h3>Hôtel de la mer</h3>
                              <p>Nuit à partir de 46€</p>
@@ -158,7 +157,7 @@
                 </div>
                 <div class="card_hebergement">
                     <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier"  class="hebergement_photo">
-                    <div class="container_card_hebergement column_between"> 
+                    <div class="container_card_hebergement "> 
                         <div class="text_container">        
                             <h3> Auberge Le Panier</h3>
                              <p>Nuit à partir de 23€</p>
@@ -174,7 +173,7 @@
                 </div>
                 <div class="card_hebergement">
                     <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel Chez Amina"  class="hebergement_photo">
-                    <div class="container_card_hebergement column_between"> 
+                    <div class="container_card_hebergement "> 
                         <div class="text_container">     
                             <h3>Hôtel Chez Amina</h3>
                             <p>Nuit à partir de 96€</p>
@@ -191,8 +190,7 @@
             </div>
             <div class="afficher_plus"> <a href="#" class="noDecoration colorBlack"> Afficher plus </a></div>
         </div>
-        
-         
+        <!-- ajout de l'article au côtés des blocs 1 et 2 -->
             <article id="populaire" class="populaire_marseille backGris">
         <div class="en-tete_pop around">
             <h2>Les Plus Populaires</h2>
@@ -252,26 +250,24 @@
     </article>
     </section>
 
-  
-
         <section id="activites">
             <h2>Activités à Marseille</h2>
             <div id="grilleActivites" class="row_evenly">
-                <div class="card_activites column">
+                <div class="card_activites column ">
                         <img src="images/Activites/Port.jpg" alt="Vieux-Port"  class="activite_photo">
-                        <h3>Vieux-Port</h3>
+                        <div class="titre_card_activite"><h3>Vieux-Port</h3></div>
                 </div> 
                 <div class="card_activites column">
                     <img src="images/Activites/Fort.jpg" alt="Fort de Pomègues"  class="activite_photo">
-                    <h3>Fort de Pomègues</h3>
+                    <div class="titre_card_activite"><h3>Fort de Pomègues</h3></div>
                 </div> 
                 <div class="card_activites column">
                     <img src="images/Activites/parc.jpg" alt="Parc national des Calanques"  class="activite_photo">
-                    <h3>Parc national des Calanques</h3>
+                    <div class="titre_card_activite"><h3>Parc national des Calanques</h3></div>
                 </div> 
                 <div class="card_activites column">
                     <img src="images/Activites/notredame.jpg" alt="Notre-Dame-de-la-Garde"  class="activite_photo">
-                    <h3>Notre-Dame-de-la-Garde</h3>
+                    <div class="titre_card_activite"><h3>Notre-Dame-de-la-Garde</h3></div>
                 </div> 
             </div>        
             </section>
@@ -280,22 +276,21 @@
         <div id="container_footer" class="around row">
             <div class="Bloc_footer">
                 <h3>A propos</h3>
-                <div><a href="" class="noDecoration colorBlack"> Fonctionnement du site </a></div>
-                <div> <a href="" class="noDecoration colorBlack">Conditions générales</a></div>
-                <div><a href="" class="noDecoration colorBlack">Données et confidentialité</a></div>
+                <div class="lien_footer"><a href="" class="noDecoration colorBlack"> Fonctionnement du site </a></div>
+                <div class="lien_footer"> <a href="" class="noDecoration colorBlack">Conditions générales</a></div>
+                <div class="lien_footer"><a href="" class="noDecoration colorBlack">Données et confidentialité</a></div>
             </div>
             <div class="Bloc_footer">
                 <h3>Nos hébergements</h3>
-                <div><a href="" class="noDecoration colorBlack">Charte qualité</a></div>
-                <div><a href="" class="noDecoration colorBlack">Proposer votre idée</a></div>
+                <div class="lien_footer"><a href="" class="noDecoration colorBlack">Charte qualité</a></div>
+                <div class="lien_footer"><a href="" class="noDecoration colorBlack">Proposer votre idée</a></div>
             </div>
             <div class="Bloc_footer">
                 <h3>Assistance</h3>
-                <div><a href="" class="noDecoration colorBlack">Centre d'aide</a></div>
-                <div><a href="" class="noDecoration colorBlack">Nous contacter</a></div>
+                <div class="lien_footer"><a href="" class="noDecoration colorBlack">Centre d'aide</a></div>
+                <div class="lien_footer"><a href="" class="noDecoration colorBlack">Nous contacter</a></div>
             </div>
         </div>
-        
     </footer>
 </body>
 </html>
