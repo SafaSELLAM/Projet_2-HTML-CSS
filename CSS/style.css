@@ -1,4 +1,4 @@
-/*Generales*/
+/*class Generales*/
 .center{
     display: flex;
     justify-content: center;
@@ -32,7 +32,6 @@
     flex-direction: column;
     justify-content: space-between;
 }
-
 .colorGris {
     color: #f2f2f2;
 }
@@ -54,17 +53,6 @@
 .noBorder {
     border: none;
 }
-
-header{
-    margin-top: -11px;
-    width: 100%;
-}
-
-body{
-    font-family: 'raleway', sans-serif;
-    max-width: 1400px;
-    margin: 0 auto;
-}
 *{
     box-sizing: border-box;
 }
@@ -72,18 +60,28 @@ h1, h2, h3,h4, h5,h6,p{
     margin: 0;
     padding: 0;
 }
+h2{
+    font-size: 22px;
+}
+header{
+    width: 100%;
+    margin-bottom: 15px;
+}
+body{
+    font-family: 'raleway', sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 /*NAV*/
 .liens_nav{
     font-weight: 500;
     font-size: 16px;
     width: 30%;
-    padding-top: 3px;
-    text-decoration: none;
 }
 
 nav img{
-    margin-left: 50px;
-  
+    margin-left: 55px;
 }
 .sizeLien {
     height: 100px;
@@ -91,7 +89,6 @@ nav img{
 }
 .bordureNav{
     border-top: 3px solid transparent;
-    margin-top: 8px;
 }
 .bordureNav:hover {
     border-top: 3px solid #0065fc;
@@ -112,14 +109,12 @@ p {
 }
 #Section_1 {
     width: 91%;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
 }
 .searchBar {
     display: flex;
     align-items: center;
     width: 40%;
-    border: #f2f2f2 0.75px solid;
     border-radius: 15px;
     height: 50px;
     margin-top: 25px;
@@ -136,13 +131,14 @@ form{
     height: 50px;
     border-radius: 10px 0px 0px 10px;
  }
-.search {
+Input.search {
     width: 80%;
     height: 50px;
     font-size: 18px ;
     font-weight: 700;
-    color: black;
     padding-left: 20px;
+    border-top: #f2f2f2 solid 1px;
+    border-bottom: #f2f2f2 solid 1px ;
 }
 .bouton {
     width: 30%;
@@ -165,7 +161,9 @@ form{
     margin-bottom: 40px;
     width: 83%;
 }
-
+.filtres > h3{
+    font-size: 21px;
+}
  .barre_filtres{
     width: 100%;
     display: flex;
@@ -174,19 +172,16 @@ form{
     height: 50px;
     border:  2px solid #D9D9D9;
     border-radius: 25px;
-    padding-left: 15px;
-    padding-right: 16px;
+    padding:0px 16px 0px 15px;
     margin-left: 12px;
  }
  .IconeFiltres {
-    color: #0065fc;
     padding-right: 15px;
  }
  .bordureFiltres:hover {
     background-color: #DEEBFF;
  }
  .textFiltres{
-    color: black;
     font-size: 15px;
     font-weight: 700;
  }
@@ -198,10 +193,8 @@ form{
     align-items: center;
     height: 24px;
     margin-bottom: 40px;
-    
  }
  .iconeInfo {
-    color: #0065fc;
     border-radius: 36px;
     box-shadow: 0 0 2px #888;
     padding: 5px 12px 8px 12px;
@@ -222,15 +215,14 @@ form{
     border-radius: 20px;
 }
 .hebergement_marseille h2 {
-    padding-left: 42px;
-    padding-top: 40px;
+    padding: 40px 0px 0px 42px;
+    margin-bottom: 8px;
 }
 .blocs_1 {
     padding: 15px 17px 40px 22px;
 }
 .blocs_2 {
-    padding-right: 17px;
-    padding-left: 22px;
+    padding:0px 17px 0px 22px;
 }
 .hebergement_photo{
     border-radius: 20px 20px 0px 0px ;
@@ -258,15 +250,13 @@ form{
 }
 .text_container p {
     font-size: 14px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin:8px 0px;
   
 }
 .afficher_plus{
     font-size: 18px;
     font-weight: 700;
-    padding-left: 42px;
-    padding-top: 35px;
+    padding: 35px 0px 0px 42px;
 }
 /* populaires*/ 
 .en-tete_pop{
@@ -282,7 +272,7 @@ form{
     width: 90%;
     border-radius: 20px;
     box-shadow:3px 3px 6px #D9D9D9;
-   margin: 20px auto;
+    margin: 20px auto;
 }
 .populaire_photo{
     width: 35%;
@@ -293,10 +283,8 @@ form{
 }
 .container_card_pop{
     width: 60%;
-    padding-bottom: 5px;
-    padding-top: 10px;
+    padding: 10px 0px 5px 0px;
 }
-
 .text_card_pop h3{
     font-size: 16px;
     font-weight: 700;
@@ -338,8 +326,7 @@ footer{
     width: 95%;
     display: flex;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+     margin: 0 auto;
 }
 #container_footer{
     width: 85%;
@@ -386,9 +373,10 @@ footer{
     justify-content: space-around;
         }
     .bordureFiltres{
-        padding-left: 9px;
-        padding-right: 8px;
-     
+        padding: 0px 8px 0px 9px;
+    }
+    #activites> h2{
+        margin-left: 33px;
     }
     /*Section principale Tablette*/
 
@@ -423,7 +411,7 @@ footer{
         margin-top: 10px;
     }
     .bloc_3>*{
-        flex: 1 0 25%;
+        flex: 0 0 30%;
     }
       /*Activités Tablette*/ 
     .activite_photo{
@@ -441,7 +429,7 @@ footer{
     }
     nav{
         flex-direction:column;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     .liens_nav{
         justify-content: center;
@@ -469,7 +457,6 @@ footer{
     /*Barre de recherche*/
     .searchBar{
         width: 100%;
-        
     }
     .form_content{
         width: 100%;
@@ -594,7 +581,7 @@ footer{
     #container_footer{
         flex-direction: column;
         align-items: flex-start;
-        margin: 25px 0pX 40px 20px;
+        margin: 25px 0pX 40px 30px;
         height: fit-content;
     }
     .Bloc_footer{
