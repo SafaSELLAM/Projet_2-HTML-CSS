@@ -237,6 +237,7 @@ Input.search {
     box-shadow: 3px 4px 4px #D9D9D9; 
     width: 30%;
     padding: 5px 5px 0px 5px;
+    cursor: pointer;
 }
 .container_card_hebergement{
     padding: 8px;
@@ -273,6 +274,7 @@ Input.search {
     border-radius: 20px;
     box-shadow:3px 3px 6px #D9D9D9;
     margin: 20px auto;
+    cursor: pointer;
 }
 .populaire_photo{
     width: 35%;
@@ -306,7 +308,9 @@ Input.search {
     margin-bottom: 50px;
     width: 21%;
     border-radius: 20px;
-    box-shadow: 3px 4px 4px #D9D9D9
+    box-shadow: 3px 4px 4px #D9D9D9;
+    cursor: pointer;
+    
 }
 .activite_photo{
     border-radius: 20px 20px 0px 0px;
@@ -500,7 +504,7 @@ footer{
     .barre_filtres>*{
         flex:0 1 48%;
         margin-top: 9px;
-        justify-content: center;
+        justify-content: flex-start;
         margin-left: 0px;
     }
 /*Hebergement Mobile*/ 
