@@ -1,119 +1,153 @@
 /*class Generales*/
-.center{
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.around{
+
+.around {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.between{
+
+.between {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.row{
+
+.row {
     display: flex;
     flex-direction: row;
 }
-.column{
+
+.column {
     display: flex;
     flex-direction: column;
 }
-.row_evenly{
+
+.row_evenly {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly
 }
-.column_between{
+
+.column_between {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .colorGris {
     color: #f2f2f2;
 }
+
 .backGris {
     background-color: #f2f2f2;
 }
-.colorBlue{
+
+.colorBlue {
     color: #0065fc;
 }
+
 .backBlue {
     background-color: #0065fc;
 }
+
 .colorBlack {
     color: black;
 }
-.noDecoration{
+
+.noDecoration {
     text-decoration: none;
 }
+
 .noBorder {
     border: none;
 }
-.bold{
-    font-weight:600;
+
+.bold {
+    font-weight: 600;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
-h1, h2, h3,h4, h5,h6,p{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
     padding: 0;
 }
-h2{
+
+h2 {
     font-size: 22px;
 }
-header{
+
+header {
     width: 100%;
     margin-bottom: 15px;
 }
-body{
+
+body {
     font-family: 'raleway', sans-serif;
-    max-width: 1400px;
     margin: 0 auto;
 }
 
 /*NAV*/
-.liens_nav{
+.liens_nav {
     font-weight: 500;
     font-size: 16px;
     width: 30%;
 }
 
-nav img{
+nav img {
     margin-left: 55px;
+    width: 61px;
+    height: 19px;
 }
+
 .sizeLien {
     height: 100px;
     width: 50%;
 }
-.bordureNav{
+
+.bordureNav {
     border-top: 3px solid transparent;
 }
+
 .bordureNav:hover {
     border-top: 3px solid #0065fc;
 }
-.bordureNav:hover > a {
+
+.bordureNav:hover>a {
     color: #0065fc;
 }
+
 /*Section 1*/
 h1 {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 5px;
 }
+
 p {
     font-size: 16px;
     font-weight: 400;
     margin-top: 10px;
 }
+
 #Section_1 {
     width: 91%;
     margin: 0 auto;
 }
+
 .searchBar {
     display: flex;
     align-items: center;
@@ -122,27 +156,31 @@ p {
     height: 50px;
     margin-top: 25px;
 }
-form{
-    width: 100%;
-}
-.form_content{
+
+form {
     width: 100%;
 }
 
- .font_destination {
+.form_content {
+    width: 100%;
+}
+
+.font_destination {
     width: 15%;
     height: 50px;
     border-radius: 10px 0px 0px 10px;
- }
+}
+
 Input.search {
     width: 80%;
     height: 50px;
-    font-size: 18px ;
+    font-size: 18px;
     font-weight: 700;
     padding-left: 20px;
     border-top: #f2f2f2 solid 1px;
-    border-bottom: #f2f2f2 solid 1px ;
+    border-bottom: #f2f2f2 solid 1px;
 }
+
 .bouton {
     width: 30%;
     height: 50px;
@@ -152,9 +190,10 @@ Input.search {
     cursor: pointer;
     border-radius: 0px 10px 10px 0px;
 }
-.icone_none{
-   display: none !important;
-  }
+
+.icone_none {
+    display: none !important;
+}
 
 /*Barre de filtres*/
 .filtres {
@@ -164,68 +203,80 @@ Input.search {
     margin-bottom: 40px;
     width: 83%;
 }
- .barre_filtres{
+
+.barre_filtres {
     width: 100%;
     display: flex;
- }
- .bordureFiltres {
+}
+
+.bordureFiltres {
     height: 50px;
-    border:  2px solid #D9D9D9;
+    border: 2px solid #D9D9D9;
     border-radius: 25px;
-    padding:0px 16px 0px 15px;
+    padding: 0px 16px 0px 15px;
     margin-left: 12px;
- }
- .IconeFiltres {
+}
+
+.IconeFiltres {
     padding-right: 15px;
- }
- .bordureFiltres:hover {
+}
+
+.bordureFiltres:hover {
     background-color: #DEEBFF;
- }
- .textFiltres{
+}
+
+.textFiltres {
     font-size: 15px;
     font-weight: 700;
- }
+}
 
- /* barre d'infos*/
+/* barre d'infos*/
 
- #information {
+#information {
     display: flex;
     align-items: center;
     height: 24px;
     margin-bottom: 40px;
- }
- .iconeInfo {
+}
+
+.iconeInfo {
     border-radius: 36px;
     box-shadow: 0 0 2px #888;
     padding: 5px 12px 8px 12px;
- }
- .text_info {
+}
+
+.text_info {
     font-size: 16px;
     font-weight: 400;
     padding-left: 15px;
- }
+}
 
 /*HEBERGEMENT MARSEILLE*/
-    .second_section{
-        height: 680px;
-    }
+.second_section {
+    height: 680px;
+}
+
 .hebergement_marseille {
     width: 65%;
     height: 680px;
     border-radius: 20px;
 }
+
 .hebergement_marseille h2 {
     padding: 40px 0px 0px 42px;
     margin-bottom: 8px;
 }
+
 .blocs_1 {
     padding: 15px 17px 40px 22px;
 }
+
 .blocs_2 {
-    padding:0px 17px 0px 22px;
+    padding: 0px 17px 0px 22px;
 }
-.hebergement_photo{
-    border-radius: 20px 20px 0px 0px ;
+
+.hebergement_photo {
+    border-radius: 20px 20px 0px 0px;
     width: 100%;
     height: 120px;
     object-fit: cover;
@@ -234,12 +285,13 @@ Input.search {
 .card_hebergement {
     border-radius: 15px;
     background-color: white;
-    box-shadow: 3px 4px 4px #D9D9D9; 
+    box-shadow: 3px 4px 4px #D9D9D9;
     width: 30%;
     padding: 5px 5px 0px 5px;
     cursor: pointer;
 }
-.container_card_hebergement{
+
+.container_card_hebergement {
     padding: 8px;
 }
 
@@ -249,49 +301,58 @@ Input.search {
     display: flex;
     height: fit-content;
 }
+
 .text_container p {
     font-size: 14px;
-    margin:8px 0px;
-  
+    margin: 8px 0px;
+
 }
-.afficher_plus{
+
+.afficher_plus {
     font-size: 18px;
     font-weight: 700;
     padding: 35px 0px 0px 42px;
 }
-/* populaires*/ 
-.en-tete_pop{
+
+/* populaires*/
+.en-tete_pop {
     padding-top: 40px;
 }
+
 .populaire_marseille {
     height: 680px;
     width: 25%;
     border-radius: 20px;
 }
-.card_pop{
+
+.card_pop {
     background-color: white;
     width: 90%;
     border-radius: 20px;
-    box-shadow:3px 3px 6px #D9D9D9;
+    box-shadow: 3px 3px 6px #D9D9D9;
     margin: 20px auto;
     cursor: pointer;
 }
-.populaire_photo{
+
+.populaire_photo {
     width: 35%;
     height: 150px;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
     padding: 5px;
 }
-.container_card_pop{
+
+.container_card_pop {
     width: 60%;
     padding: 10px 0px 5px 0px;
 }
-.text_card_pop h3{
+
+.text_card_pop h3 {
     font-size: 16px;
     font-weight: 700;
 }
-.text_card_pop p{
+
+.text_card_pop p {
     font-size: 14px;
 }
 
@@ -300,54 +361,63 @@ Input.search {
     margin-left: 45px;
     margin-top: 50px;
 }
-#grilleActivites{
+
+#grilleActivites {
     width: 100%;
 }
-.card_activites{
+
+.card_activites {
     margin-top: 20px;
     margin-bottom: 50px;
     width: 21%;
     border-radius: 20px;
     box-shadow: 3px 4px 4px #D9D9D9;
     cursor: pointer;
-    
+
 }
-.activite_photo{
+
+.activite_photo {
     border-radius: 20px 20px 0px 0px;
     height: 389px;
     width: 100%;
     object-fit: cover;
 }
-.titre_card_activite{
+
+.titre_card_activite {
     font-size: 14px;
     padding-left: 17px;
     display: flex;
     align-items: center;
     height: 56px;
 }
+
 /*footer*/
-footer{
+footer {
     width: 95%;
     display: flex;
     align-items: center;
-     margin: 0 auto;
+    margin: 0 auto;
 }
-#container_footer{
+
+#container_footer {
     width: 85%;
     height: 220px;
 
 }
-.Bloc_footer{
+
+.Bloc_footer {
     line-height: 18px;
     margin-right: 12px;
     min-height: 135px;
 }
-.Bloc_footer h3{
+
+.Bloc_footer h3 {
     padding-bottom: 20px;
     font-size: 17px;
     line-height: 21px;
 }
-.lien_footer{
+
+.lien_footer {
     padding-top: 8px;
     font-size: 15px;
     line-height: 19px;
@@ -355,87 +425,106 @@ footer{
 
 /*Responsive Tablette*/
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 1024px) {
+
     /*Barre de recherche Tablette*/
-    .searchBar{
+    .searchBar {
         width: 50%;
     }
-    .search{
+
+    .search {
         width: 80%;
     }
-    .font_destination{
+
+    .font_destination {
         width: 20%;
     }
-    .bouton{
+
+    .bouton {
         width: 30%;
     }
+
     .filtres {
         width: 100%;
-       }
-    .barre_filtres{
-    width: 100%;
-    justify-content: space-around;
-        }
-    .bordureFiltres{
+    }
+
+    .barre_filtres {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .bordureFiltres {
         padding: 0px 8px 0px 9px;
     }
-    #activites> h2{
+
+    #activites>h2 {
         margin-left: 33px;
     }
+
     /*Section principale Tablette*/
 
- .second_section{
-    width: 100%;
-     flex-direction: column;
-     height: fit-content;
+    .second_section {
+        width: 100%;
+        flex-direction: column;
+        height: fit-content;
     }
-    /*Hebergement Tablette*/   
 
-    .hebergement_marseille{
+    /*Hebergement Tablette*/
+
+    .hebergement_marseille {
         width: 90%;
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 50px;
     }
-      /*Populaire Tablette*/ 
-    .populaire_marseille{
+
+    /*Populaire Tablette*/
+    .populaire_marseille {
         width: 90%;
         margin-bottom: 20px;
         margin-right: auto;
         margin-left: auto;
         height: fit-content;
     }
-    .en-tete_pop{
+
+    .en-tete_pop {
         justify-content: space-between;
         padding: 25px 29px 0px 22px;
     }
-    .bloc_3{
+
+    .bloc_3 {
         flex-direction: row;
         margin-bottom: 35px;
         margin-top: 10px;
     }
-    .bloc_3>*{
+
+    .bloc_3>* {
         flex: 0 0 30%;
     }
-      /*Activités Tablette*/ 
-    .activite_photo{
+
+    /*Activités Tablette*/
+    .activite_photo {
         height: 211px;
     }
 }
+
 /*Responsive Mobile*/
 @media screen and (max-width: 767px) {
-  /*Barre de navigation Mobile*/ 
-    nav img{
+
+    /*Barre de navigation Mobile*/
+    nav img {
         display: flex;
         justify-content: center;
         margin-top: 20px;
         margin-left: 0px;
     }
-    nav{
-        flex-direction:column;
+
+    nav {
+        flex-direction: column;
         margin-bottom: 30px;
     }
-    .liens_nav{
+
+    .liens_nav {
         justify-content: center;
         font-weight: 500;
         font-size: 16px;
@@ -443,154 +532,187 @@ footer{
         padding-top: 3px;
         text-decoration: none;
     }
-    .bordureNav{
+
+    .bordureNav {
         border-bottom: 3px solid #f2f2f2;
         height: 60px;
         width: 100%;
     }
+
     .bordureNav:hover {
         border-top: 3px solid transparent;
         border-bottom: 3px solid #0065fc;
     }
-   /* Première section*/
-    .MobileIntro{
+
+    /* Première section*/
+    .MobileIntro {
         width: 100%;
         justify-content: center;
         align-items: center;
     }
+
     /*Barre de recherche*/
-    .searchBar{
+    .searchBar {
         width: 100%;
     }
-    .form_content{
+
+    .form_content {
         width: 100%;
     }
-    .font_destination{
+
+    .font_destination {
         width: 20%;
     }
-    Input.search{
+
+    Input.search {
         width: 100%;
         border: 1px solid #f2f2f2;
     }
-    .bouton{
+
+    .bouton {
         width: 20%;
     }
-    .button_text{
+
+    .button_text {
         display: none;
     }
-    .icone_none{
+
+    .icone_none {
         display: block !important;
-     }
-/*Barre de Filtres Mobile*/ 
+    }
+
+    /*Barre de Filtres Mobile*/
     .filtres {
-     flex-direction: column;
-     align-items: flex-start;
-     height: fit-content;
-     width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        height: fit-content;
+        width: 100%;
     }
+
     .filtres h2 {
-     display: flex;
-     justify-content: flex-end;  
+        display: flex;
+        justify-content: flex-end;
     }
-    .textFiltres{
-     font-size: 12px;   
-     font-weight: 700;
+
+    .textFiltres {
+        font-size: 12px;
+        font-weight: 700;
     }
-    .barre_filtres{
+
+    .barre_filtres {
         flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
     }
-    .barre_filtres>*{
-        flex:0 1 48%;
+
+    .barre_filtres>* {
+        flex: 0 1 48%;
         margin-top: 9px;
         justify-content: flex-start;
         margin-left: 0px;
     }
-/*Hebergement Mobile*/ 
-    .hebergement_marseille{
+
+    /*Hebergement Mobile*/
+    .hebergement_marseille {
         height: fit-content;
         width: 100%;
         background-color: transparent;
-        order:1
+        order: 1
     }
-    .hebergement_marseille h2{
+
+    .hebergement_marseille h2 {
         padding: 30px 0px 30px 30px;
     }
-    .blocs_1{
+
+    .blocs_1 {
         flex-direction: column;
         height: fit-content;
         padding: 0px;
     }
-    .blocs_2{
+
+    .blocs_2 {
         flex-direction: column;
         height: fit-content;
         padding: 0px;
     }
-    .card_hebergement{
+
+    .card_hebergement {
         width: 90%;
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 15px;
         box-shadow: 3px 6px 15px #D9D9D9;
     }
-    .hebergement_photo{
+
+    .hebergement_photo {
         height: 124px;
     }
-    .afficher_plus{
+
+    .afficher_plus {
         display: none;
     }
-/*Populaire Mobile*/ 
-    .populaire_marseille{
+
+    /*Populaire Mobile*/
+    .populaire_marseille {
         width: 100%;
         order: 0;
         border-radius: 0px;
     }
-    .bloc_3{
+
+    .bloc_3 {
         flex-direction: column;
     }
-    .populaire_photo{
+
+    .populaire_photo {
         width: 40%;
         height: 144px;
     }
-    .container_card_pop{
+
+    .container_card_pop {
         padding-left: 15px;
     }
+
     /*Activités Mobile*/
-    #activites{
+    #activites {
         height: fit-content;
     }
-    #activites h2{
+
+    #activites h2 {
         max-width: 120px;
         margin-left: 34px;
         margin-top: 0;
     }
-    #grilleActivites{
+
+    #grilleActivites {
         height: fit-content;
         flex-direction: column;
     }
-    .activite_photo{
+
+    .activite_photo {
         height: 134px;
     }
-    .card_activites{
+
+    .card_activites {
         width: 90%;
         height: 190px;
-       margin: 15PX auto 0px auto;
+        margin: 15PX auto 0px auto;
     }
+
     /*footer Mobile*/
-    footer{
-        margin-top:70px ;
+    footer {
+        margin-top: 70px;
         width: 100%;
     }
-    #container_footer{
+
+    #container_footer {
         flex-direction: column;
         align-items: flex-start;
         margin: 25px 0pX 40px 30px;
         height: fit-content;
     }
-    .Bloc_footer{
+
+    .Bloc_footer {
         height: fit-content;
         margin-top: 20px;
     }
-    }
-    
+}
